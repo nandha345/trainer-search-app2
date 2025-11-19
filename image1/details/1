@@ -1,0 +1,52 @@
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View, TextInput } from 'react-native';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.heading}>Student Details</Text>
+
+      <TextInput
+        style={styles.input}
+        placeholder="Enter Name"
+      />
+
+      <TextInput
+        style={styles.input}
+        placeholder="Enter USN"
+      />
+
+      <TextInput
+        style={styles.input}
+        placeholder="Enter Email"
+        keyboardType="email-address"
+      />
+
+      <StatusBar style="auto" />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 20,
+  },
+  heading: {
+    fontSize: 25,
+    fontWeight: 'bold',
+    marginBottom: 25,
+  },
+  input: {
+    width: '100%',
+    padding: 12,
+    borderWidth: 1,
+    borderColor: '#444',
+    borderRadius: 8,
+    fontSize: 18,
+    marginBottom: 20,
+  },
+});
