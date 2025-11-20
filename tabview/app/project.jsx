@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-export default function Rootlayout() {
+export default function project() {
   return (
     <View>
-      <Text>Rootlayout</Text>
+      <Text>project</Text>
     </View>
   )
 }
